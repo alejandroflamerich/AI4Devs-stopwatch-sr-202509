@@ -1,0 +1,25 @@
+:root{
+  --bg: #ffffff;
+  --display-bg: #e6e9ff;
+  --border: #333333;
+  --green: #00e000;
+  --red: #ff0000;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family: Arial, Helvetica, sans-serif;background:var(--bg);color:#111}
+.page-wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:40px}
+.stopwatch{width:90%;max-width:1100px;display:flex;flex-direction:column;align-items:center;gap:40px}
+.display{width:100%;background:var(--display-bg);border:10px solid var(--border);border-radius:30px;padding:26px 20px;display:flex;align-items:center;justify-content:center;position:relative}
+.display .time{font-size:10vw;min-width:60%;text-align:center;font-weight:700}
+.display .ms{position:absolute;right:36px;bottom:10px;font-size:2.2vw}
+.controls{width:100%;display:flex;justify-content:space-between;gap:20px}
+.btn{flex:1;padding:36px;border-radius:20px;border:8px solid var(--border);font-size:3.2vw;font-weight:700;cursor:pointer}
+.btn.start{background:linear-gradient(#18ff30,#00c800);color:#001000}
+.btn.clear{background:linear-gradient(#ff4a4a,#cc0000);color:#200000}
+.credit{margin-top:8px;color:#333;font-size:14px}
+
+@media(min-width:900px){
+  .display .time{font-size:120px}
+  .display .ms{font-size:20px}
+  .btn{font-size:36px;padding:28px}
+}

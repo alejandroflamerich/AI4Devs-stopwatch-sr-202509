@@ -1,0 +1,26 @@
+:root{
+  --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#071024 0%, #08172b 100%);color:#e6eef6;margin:0;padding:24px}
+header h1{margin:0 0 6px;font-size:1.6rem}
+.lead{color:var(--muted);margin:0 0 18px}
+main{display:grid;grid-template-columns:320px 1fr;gap:20px}
+.creator{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.field{display:flex;flex-direction:column;margin-bottom:10px}
+.field label{font-size:13px;color:var(--muted);margin-bottom:6px}
+input,select{padding:8px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:var(--glass);color:inherit}
+.actions{display:flex;gap:8px}
+button{background:var(--accent);border:none;padding:8px 12px;border-radius:8px;color:#042027;cursor:pointer}
+button.secondary{background:#1f2937;color:var(--muted)}
+.timers{background:transparent;padding:0}
+.list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:12px;display:flex;align-items:center;justify-content:space-between;border:1px solid rgba(255,255,255,0.03)}
+.meta{display:flex;gap:12px;align-items:center}
+.label{font-weight:600}
+.time{font-variant-numeric:tabular-nums;font-size:1.15rem}
+.controls{display:flex;gap:6px}
+.pill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;color:var(--muted);font-size:13px}
+.muted{color:var(--muted)}
+.finished{opacity:0.6}
+@media (max-width:800px){main{grid-template-columns:1fr;}}

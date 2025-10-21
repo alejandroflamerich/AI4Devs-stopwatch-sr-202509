@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timer and Countdown</title>
-<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Timer and Countdown</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		/* minimal inline fallback if external CSS missing */
+	</style>
 </head>
 <body>
-<h1>Timer and Countdown</h1>
-<script src="script.js"></script>
+	<div class="page-wrap">
+		<main class="stopwatch">
+			<div class="display">
+				<div class="time">00:08:00</div>
+				<div class="ms">000</div>
+			</div>
+			<div class="controls">
+				<button class="btn start">Start</button>
+				<button class="btn clear">Clear</button>
+			</div>
+			<footer class="credit">Hecho por Alejandro Flamerich</footer>
+		</main>
+	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>

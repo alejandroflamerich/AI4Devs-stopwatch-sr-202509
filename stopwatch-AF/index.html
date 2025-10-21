@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cronómetros y Cuenta regresiva — stopwatch-AF</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="color-scheme" content="light dark">
+</head>
+<body>
+  <header>
+    <h1>Stopwatch & Countdown</h1>
+    <p class="lead">Crea múltiples cronómetros y cuentas regresivas. Se mostrará una notificación y un sonido al terminar una cuenta regresiva.</p>
+  </header>
+
+  <main>
+    <section class="creator">
+      <div class="field">
+        <label for="type">Tipo</label>
+        <select id="type">
+          <option value="stopwatch">Cronómetro</option>
+          <option value="countdown">Cuenta regresiva</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="label">Etiqueta</label>
+        <input id="label" placeholder="Descripción (opcional)">
+      </div>
+
+      <div class="field" id="countdownFields">
+        <label for="duration">Duración (HH:MM:SS)</label>
+        <input id="duration" value="00:01:00" pattern="\d{2}:\d{2}:\d{2}">
+      </div>
+
+      <div class="actions">
+        <button id="create">Crear</button>
+        <button id="requestPerm">Permisos notificaciones</button>
+      </div>
+    </section>
+
+    <section class="timers">
+      <h2>Timers activos</h2>
+      <ul id="timersList" class="list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Generado desde template — carpeta <code>stopwatch-AF</code></small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
